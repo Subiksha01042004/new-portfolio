@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="file.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <img src="s logo.jpg" alt="Your Logo">
+      <h1>Subiksha M</h1>
+    </div>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#assignments">Assignments</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="glitch" data-text="Hello, I'm Subiksha M ">Hello, I'm Subiksha M </h1>
+        <p class="subtitle">Forge Intern</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-container">
+          <img src="my pic blue color.jpg" alt="Your Profile Picture">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#projects">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div>
+          <span class="scroll-text">Scroll Down</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <p>Here are some of my recent works</p>
+    </div>
+    <div class="projects-container">
+      <div class="project-card" data-id="project1">
+        <div class="project-image">
+          <img src="green hydrogen.jpg" alt="Project 1">
+        </div>
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>Green hydogrn</p>
+         <a href="THE FUTURE OF ENERGY STORAGE (1).pdf" class="view-project">View Details </a>
+         
+        </div>
+      </div>
+      <div class="project-card" data-id="project2">
+        <div class="project-image">
+          <img src="Revolutionizing-Solar-Panel-Monitoring-with-IoT-Technology.jpg" alt="Project 2">
+        </div>
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>Solar panel monitoring system</p>
+          <a href="IOT_BASED_SOLAR_MONITORING_SYSTEM[1].pdf" class="view-project">View Details </a>
+          
+        </div>
+      </div>
+      <div class="project-card" data-id="project3">
+        <div class="project-image">
+          <img src="ai.jpg" alt="Project 3">
+        </div>
+        <div class="project-info">
+          <h3>Project Three</h3>
+          <p>Creating Images from Text</p>
+          <a href="CREATING IMAGES FROM TEXT DESCRIPTION.pdf" class="view-project">View Details </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Popups -->
+  <div class="popup-overlay" id="project-popup-overlay">
+    <div class="popup-container">
+      <div class="popup-close">&times;</div>
+      <div class="popup-content" id="project1-popup">
+        <h2>Project One</h2>
+        <div class="popup-image">
+          <img src="" alt="Project 1 Detail">
+        </div>
+        <div class="popup-details">
+          <h3>Web Application</h3>
+          <p>This is a detailed description of Project One. It includes information about the technologies used, challenges faced, and solutions implemented.</p>
+          <div class="tech-stack">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary-btn" target="_blank">Live Demo</a>
+            <a href="#" class="btn secondary-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup-content" id="project2-popup">
+        <h2>Project Two</h2>
+        <div class="popup-image">
+          <img src="1654634918204 (1).png" alt="Project 2 Detail">
+        </div>
+        <div class="popup-details">
+          <h3>Mobile App</h3>
+          <p>This is a detailed description of Project Two. It includes information about the technologies used, challenges faced, and solutions implemented.</p>
+          <div class="tech-stack">
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>Redux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary-btn" target="_blank">App Store</a>
+            <a href="#" class="btn secondary-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup-content" id="project3-popup">
+        <h2>Project Three</h2>
+        <div class="popup-image">
+          <img src="1654634918204.png?height=400&width=700" alt="Project 3 Detail">
+        </div>
+        <div class="popup-details">
+          <h3>E-commerce Website</h3>
+          <p>This is a detailed description of Project Three. It includes information about the technologies used, challenges faced, and solutions implemented.</p>
+          <div class="tech-stack">
+            <span>Next.js</span>
+            <span>Tailwind CSS</span>
+            <span>MongoDB</span>
+            <span>Stripe</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary-btn" target="_blank">Live Demo</a>
+            <a href="#" class="btn secondary-btn" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Assignments Section -->
+  <section id="assignments" class="assignments">
+    <div class="section-header">
+      <h2>My Assignments</h2>
+      <p>Academic and learning projects</p>
+    </div>
+    <div class="assignments-container">
+      <!-- 9 Assignment boxes -->
+      <div class="assignment-card" data-id="assignment1">
+        <div class="assignment-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Assignment 1</h3>
+        <p>Industrial Design & Rapid Prototyping Techniques</p>
+        <a href="SUBIKSHA M - Laser Cutting Assignment.pdf" class="view-project">View Details </a>
+      </div>
+      <div class="assignment-card" data-id="assignment2">
+        <div class="assignment-icon">
+          <i class="fas fa-paint-brush"></i>
+          
+        </div>
+        <h3>Assignment 2</h3>
+        <p>Programming Paradigm</p>
+        <a href="Programming Paradigm1-1.docx.pdf" class="view-project">View Details </a>
+      </div>
+      <div class="assignment-card" data-id="assignment3">
+        <div class="assignment-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>Assignment 3</h3>
+        <p>Understanding sensor behind things</p>
+        <a href="Understanding sensor behind things (1).pdf" class="view-project">View Details </a>
+      </div>
+      <div class="assignment-card" data-id="assignment4">
+        <div class="assignment-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Assignment 4</h3>
+        
+        <p>Robotic Arm & Animation</p>
+        <a href="Subiksha M-Robot arm.avi" class="view-project">View Details </a>
+      </div>
+     
+  </section>
+
+  <!-- Assignment Popups -->
+  <div class="popup-overlay" id="assignment-popup-overlay">
+    <div class="popup-container">
+      <div class="popup-close">&times;</div>
+      <!-- Assignment 1 Popup -->
+      <div class="popup-content" id="assignment1-popup">
+        <h2>Assignment 1: Web Development Basics</h2>
+        <div class="popup-details">
+          <div class="assignment-meta">
+            <p><strong>Course:</strong> Introduction to Web Development</p>
+            <p><strong>Date:</strong> January 2023</p>
+            <p><strong>Grade:</strong> A</p>
+          </div>
+          <h3>Description</h3>
+          <p>This assignment focused on creating a responsive website using HTML, CSS, and JavaScript. The goal was to demonstrate understanding of fundamental web development concepts.</p>
+          <h3>Key Learnings</h3>
+          <ul>
+            <li>Semantic HTML structure</li>
+            <li>CSS Flexbox and Grid layouts</li>
+            <li>JavaScript DOM manipulation</li>
+            <li>Responsive design principles</li>
+          </ul>
+          <div class="assignment-files">
+            <h3>Files & Resources</h3>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-code"></i> Project Files</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-pdf"></i> Documentation</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-link"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Assignment 2 Popup -->
+      <div class="popup-content" id="assignment2-popup">
+        <h2>Assignment 2: UI/UX Design</h2>
+        <div class="popup-details">
+          <div class="assignment-meta">
+            <p><strong>Course:</strong> User Interface Design</p>
+            <p><strong>Date:</strong> February 2023</p>
+            <p><strong>Grade:</strong> A-</p>
+          </div>
+          <h3>Description</h3>
+          <p>This assignment involved creating wireframes and prototypes for a mobile application. The focus was on user experience and interface design principles.</p>
+          <h3>Key Learnings</h3>
+          <ul>
+            <li>User research and personas</li>
+            <li>Wireframing and prototyping</li>
+            <li>Design systems and components</li>
+            <li>Usability testing</li>
+          </ul>
+          <div class="assignment-files">
+            <h3>Files & Resources</h3>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-image"></i> Design Files</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-file-pdf"></i> Case Study</a>
+            <a href="#" class="file-link" target="_blank"><i class="fas fa-link"></i> Prototype</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional assignment popups would follow the same pattern -->
+      <!-- For brevity, I'm only showing 2 detailed examples, but in a real implementation, all 9 would be created -->
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="section-header">
+      <h2>My Skills</h2>
+      <p></p>
+    </div>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Technical</h3>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-icon"><i class=""></i></div>
+            <div class="skill-info">
+              <h4>Sensor Interfacing & Calibration</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class=""></i></div>
+            <div class="skill-info">
+              <h4>Circuit Design & Prototyping</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class=""></i></div>
+            <div class="skill-info">
+              <h4>Simulation of Electrical Circuits</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+         
+              </div>
+            </div>
+         
+  
+      
+      <div class="skill-category">
+        <h3>Non Technical</h3>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-icon"><img src="" alt=""></div>
+            <div class="skill-info">
+              <h4>Adaptability</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><img src="Matlab_Logo.png" alt=""></div>
+            <div class="skill-info">
+              <h4>Critical Thinking</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><img src="pcb_2132987.png" alt=""></div>
+            <div class="skill-info">
+              <h4>Team Collaboration</h4>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="hobbies">
+    <div class="section-header">
+      <h2>My Hobbies</h2>
+      <p>What I enjoy doing in my free time</p>
+    </div>
+    <div class="hobbies-container">
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class=""><img src="journaling-style-based-on-personality.jpg" alt=""></i>
+        </div>
+        <h3>Journaling</h3>
+        <p>I enjoy journaling as a way to slow down, reflect, and capture spontaneous ideas — whether it's a sketch, a concept for a project, or just a passing thought.</p>
+      </div>
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class=""><img src="Badminton-1-M-1080x720.jpg" alt=""></i>
+        </div>
+        <h3>Playing</h3>
+        <p>Playing shuttlecock is my go-to way to stay active and refresh my mind. It sharpens focus, reflexes, and brings a healthy competitive spirit.</p>
+      </div>
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class=""><img src="music-logo-vector-template-design-Graphics-38239116-1.jpg" alt=""></i>
+        </div>
+        <h3>Music</h3>
+        <p>I enjoy listening to A.R. Rahman’s music — it helps me relax, focus, and stay inspired. His unique sound often sets the mood for my creative work and daily routines.</p>
+      </div>
+      <div class="hobby-card">
+        <div class="hobby-icon">
+          <i class=""><img src="neatly-organized-stationery-in-white-trays-royalty-free-image-1642735905.avif" alt=""></i>
+        </div>
+        <h3>Organizing and decorating personal spaces</h3>
+        <p>I enjoy organizing and decorating personal spaces. Rearranging small elements or adding personal touches brings a sense of calm and focus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+      <p>Let's work together</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Email</h3>
+            <p>subiksha.3.3@protosem.tech
+            </p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Phone</h3>
+            <p>+91 8668095679</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <h3>Location</h3>
+            <p>Tamil Nadu, India</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/subiksha-murugan-730b322a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="" target="_blank"><i class="fab fa-github"></i></a>
+          
+    
+        </div>
+      </div>
+      <div class="contact-form">
+        
+        <form
+  action="https://formspree.io/f/mvgkydzz"
+  method="POST" id="contactForm"
+>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="s logo.jpg" alt="Your Logo">
+        <h3>Subiksha m</h3>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/subiksha-murugan-730b322a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="" target="_blank"><i class="fab fa-github"></i></a>
+        
+       
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SUBIKSHA M. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="file.js"></script>
+</body>
+</html>
+
